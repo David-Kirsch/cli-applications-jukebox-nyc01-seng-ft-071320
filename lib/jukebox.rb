@@ -48,7 +48,7 @@ def run(songs)
   
   while(response != "exit") do
     puts "Please enter a command:"
-    response = get.strip
+    response = gets.strip
     if(response == "list")
       list(songs)
       elsif(response == "play")
