@@ -23,8 +23,8 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   selected = gets.strip
-  binding.pry
   if(songs.include? selected)
+    binding.pry
     puts "playing #{selected}"
   elsif(selected.to_i <= songs.size && selected.to_i > 0)
     puts "playing #{songs[(selected.to_i) -1]}"
