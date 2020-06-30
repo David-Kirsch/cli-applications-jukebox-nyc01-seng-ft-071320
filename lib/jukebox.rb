@@ -24,9 +24,9 @@ def play(songs)
   puts "Please enter a song name or number:"
   selected = gets.strip
   if(songs.include? selected)
-    puts "playing #{selected}"
+    puts "Playing #{selected}"
   elsif(selected.to_i <= songs.size && selected.to_i > 0)
-    puts "playing #{songs[(selected.to_i) -1]}"
+    puts "Playing #{songs[(selected.to_i) -1]}"
   else
     puts "Invalid input, please try again"
   end
