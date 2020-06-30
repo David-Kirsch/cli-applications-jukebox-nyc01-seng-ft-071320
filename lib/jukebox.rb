@@ -52,6 +52,7 @@ def run(songs)
     if(response == "list")
       list(songs)
       elsif(response == "play")
+      binding.pry
         play(songs)
       elsif(response == "help")
         help
