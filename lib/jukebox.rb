@@ -43,10 +43,10 @@ def exit_jukebox
 end
 
 def run(songs) 
+  puts "Please enter a command:"
   response = " "
   
   while(response != "exit") do
-    puts "Please enter a command:"
     response = gets.strip
     if(response == "list")
       list(songs)
